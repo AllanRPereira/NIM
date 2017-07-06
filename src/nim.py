@@ -50,12 +50,12 @@ print("Bem Vindo ao NIM!!")
 
 while True:
 
-	n_toothpicks = int(input("Digite o número de palitos (5 <= x < 40):"))
+	n_toothpicks = int(input("Digite o número de palitos (5 <= x < 40) e deve ser ímpar:"))
 
-	if 5 <= n_toothpicks < 40:
+	if 5 <= n_toothpicks < 40 and n_toothpicks % 2 != 0:
 		pass
 	else:
-		print("O número de palitos está fora dos limites!! Tente novamente", end="\n\n")
+		print("O número de palitos está fora dos limites ou é par!! Tente novamente", end="\n\n")
 		time.sleep(2)
 		continue
 
